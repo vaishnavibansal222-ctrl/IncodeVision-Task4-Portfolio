@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Bansal | AI & ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js CDN for Interactive Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-accent">VB</span>.Portfolio
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#analytics">Analytics</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="btn-nav">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- 1. HOME SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="badge">Frontend Developer Intern @ Incodevision</span>
+            <h1>Hi, I'm <span class="gradient-text">Vaishnavi Bansal</span></h1>
+            <p>B.Tech student specializing in Artificial Intelligence & Machine Learning. Passionate about graph neural networks, intelligent web apps, and data analytics.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Engineering Student, IEEE Lead, & Frontend Developer Intern</p>
+        </div>
+        <div class="about-container">
+            <div class="about-card">
+                <h3>Education & Leadership</h3>
+                <p>Pursuing <strong>B.Tech in AIML</strong> at Delhi Technical Campus. Currently serving in the <strong>PR & Outreach Lead</strong> position at the IEEE Student Branch (DTC) and working as a <strong>Frontend Developer Intern</strong> at Incodevision.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Achievements & Certifications</h3>
+                <p>
+                    • Participated in the <strong>IIIT Foodscope Hackathon</strong><br>
+                    • Certifications in <strong>Machine Learning, AI, & Data Analytics</strong><br>
+                    • Certified in <strong>AWS IoT SiteWise</strong><br>
+                    • Completed <strong>Tata & Vista Job Simulations</strong> in GenAI
+                </p>
+            </div>
+
+            <div class="about-card" style="grid-column: 1 / -1;">
+                <h3>Technical Skills</h3>
+                <div class="skills-tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Artificial Intelligence</span>
+                    <span>Data Analytics</span>
+                    <span>MySQL</span>
+                    <span>Power BI</span>
+                    <span>HTML5 / CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                    <span>C Programming</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. NEW: ANALYTICS & PERFORMANCE SECTION -->
+    <section class="analytics-section" id="analytics">
+        <div class="section-title">
+            <h2>Skill & Model Analytics</h2>
+            <p>Data-driven breakdown of technical domain focus & machine learning accuracy metrics</p>
+        </div>
+        <div class="charts-grid">
+            <!-- Pie/Doughnut Chart Card -->
+            <div class="chart-card">
+                <h3>Domain Expertise Distribution</h3>
+                <div class="chart-wrapper">
+                    <canvas id="domainChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Bar Chart Card -->
+            <div class="chart-card">
+                <h3>ML Model Precision & Accuracy (%)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>A selection of AI/ML developments and interactive web applications</p>
+        </div>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-tag">Artificial Intelligence</div>
+                <h3>Rule-Based AI Chatbot</h3>
+                <p>An intelligent conversational bot built using rule-based decision trees to automate query responses and user support.</p>
+                <div class="project-tech">Python • Natural Language Logic • AI</div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">Machine Learning</div>
+                <h3>Data Classification using AI</h3>
+                <p>Supervised machine learning pipeline built to classify dataset instances with high precision and evaluation metrics.</p>
+                <div class="project-tech">Python • Scikit-Learn • Data Analytics</div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">React Web App</div>
+                <h3>ApexWeather App</h3>
+                <p>Live React-based weather dashboard fetching real-time meteorological metrics via Open-Meteo API.</p>
+                <div class="project-tech">React.js • JavaScript • API • CSS3</div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">JavaScript App</div>
+                <h3>Pro Interactive Calculator</h3>
+                <p>Modern glassmorphic scientific calculator featuring dual-line display output and arithmetic operations.</p>
+                <div class="project-tech">HTML5 • CSS3 • JavaScript</div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">Frontend Design</div>
+                <h3>Modern Landing Webpage</h3>
+                <p>Sleek, responsive dark-mode landing webpage built with responsive layouts and smooth micro-interactions.</p>
+                <div class="project-tech">HTML5 • CSS Flexbox • UI Design</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>Have a question or opportunity? Send a message directly to my inbox!</p>
+        </div>
+
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+               <input type="hidden" name="access_key" value="58dd0af4-074b-4258-a9f8-743314eb4416">
+                <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
+
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vaishnavi Bansal. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Render Chart.js Graphs -->
+    <script>
+        // Chart 1: Doughnut / Pie Chart (Domain Expertise)
+        const ctxDomain = document.getElementById('domainChart').getContext('2d');
+        new Chart(ctxDomain, {
+            type: 'doughnut',
+            data: {
+                labels: ['Machine Learning & AI', 'Frontend Web Dev', 'Data Analytics', 'Python Scripting', 'Database Management'],
+                datasets: [{
+                    data: [35, 25, 20, 12, 8],
+                    backgroundColor: ['#38bdf8', '#818cf8', '#0284c7', '#34d399', '#f43f5e'],
+                    borderColor: '#0f172a',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#cbd5e1', font: { family: 'Plus Jakarta Sans', size: 12 } }
+                    }
+                }
+            }
+        });
+
+        // Chart 2: Bar Chart (Model Performance Metrics)
+        const ctxPerf = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctxPerf, {
+            type: 'bar',
+            data: {
+                labels: ['KNN Classifier', 'Decision Tree', 'Random Forest', 'Rule Bot Matcher', 'Data Pipeline'],
+                datasets: [{
+                    label: 'Accuracy Rating (%)',
+                    data: [96, 92, 98, 94, 99],
+                    backgroundColor: 'rgba(56, 189, 248, 0.75)',
+                    borderColor: '#38bdf8',
+                    borderWidth: 1.5,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: { color: '#94a3b8' },
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' }
+                    },
+                    x: {
+                        ticks: { color: '#cbd5e1' },
+                        grid: { display: false }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#cbd5e1', font: { family: 'Plus Jakarta Sans' } }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
